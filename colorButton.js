@@ -1,4 +1,4 @@
-class colorButton extends HTMLElement {
+export default class colorButton extends HTMLElement {
   constructor() {
     super();
  
@@ -57,5 +57,3 @@ class colorButton extends HTMLElement {
     this.shadowRoot.querySelector('button').style.setProperty(attr, newValue);
   }
 }
-// カスタム要素を登録
-customElements.define('color-button', colorButton);
